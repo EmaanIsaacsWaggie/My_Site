@@ -1,4 +1,11 @@
-# Configuration file for the Sphinx documentation builder.
+import os
+import sys
+import django
+sys.path.insert(0, os.path.abspath('..'))
+os.environ['DJANGO_SETTINGS_MODULE'] = 'my_site.settings'
+django.setup()
+
+#  Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
