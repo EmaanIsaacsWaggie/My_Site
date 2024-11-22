@@ -9,6 +9,15 @@ The project is set up to run with both a **virtual environment** (`venv`) and **
 
 ## Project Setup
 
+## Prerequisites
+
+Ensure that the following tools are installed on your computer:
+
+- **Python** (preferably version 3.6 or higher)
+- **pip** (Python package manager)
+- **Docker** (optional, for containerization)
+- **Git** (for version control)
+
 ### 1. Setting Up with `venv`
 
 Follow the steps below to set up the application using a virtual environment.
