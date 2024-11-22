@@ -1,0 +1,18 @@
+<div class="container">
+    {% if latest_question_list %}
+    <h2 class="text-center">Latest Polls</h2>
+    <ul class="list-group">
+        {% for question in latest_question_list %}
+        <li class="list-group-item">
+            <a href="{% url 'polls:detail' question.id %}" class="stretched-link">
+                {{ question.question_text }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <div class="alert alert-info text-center" role="alert">
+        No polls are available.
+    </div>
+    {% endif %}
+</div>
